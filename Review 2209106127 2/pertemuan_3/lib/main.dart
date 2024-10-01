@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: const Color(0xFFE9FF97),
       body: ListView(
         children: [
-          Container(
+          SizedBox(
             width: 100,
             height: 77,
             // color: Colors.yellow,
@@ -352,7 +352,7 @@ class MyHomePage extends StatelessWidget {
                     children: [
                       Stack(
                         children: [
-                          Container(
+                          SizedBox(
                             width: 85,
                             height: 85,                            
                           ),
