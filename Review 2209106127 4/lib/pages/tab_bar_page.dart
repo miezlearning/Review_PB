@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_route/pages/home_page.dart';
+import 'package:navigation_route/pages/profile_page.dart';
+import 'package:navigation_route/pages/settings_page.dart';
 
 class TabBarPage extends StatefulWidget {
   const TabBarPage({super.key});
@@ -25,9 +28,12 @@ class _TabBarPageState extends State<TabBarPage> {
         ),
         body: const TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            MyHomePage(),
+            MyProfile(),
+            MySettingsPage(),
+            // Icon(Icons.flight, size: 350),
+            // Icon(Icons.directions_transit, size: 350),
+            // Icon(Icons.directions_car, size: 350),
           ],
         ),
       ),
